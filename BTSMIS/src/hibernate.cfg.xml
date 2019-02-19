@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/htestnew</property>
+        <property name="hibernate.connection.username">root</property>  
+        <property name="hibernate.connection.password"></property>
+        <property name="show_sql">true</property>      
+        <property name="hbm2ddl.auto">create/update</property>
+        <mapping class="service.Item"/>
+        <mapping class="service.ItemUnit"/>
+        <mapping class="service.InStock"/>
+        <mapping class="service.Partner"/>
+        <mapping class="service.AccessHandling"/>
+        <mapping class="service.AccessRequest"/>
+        <mapping class="service.Request"/>
+        <mapping class="service.User"/>
+        <mapping class="service.GenFuelTracking"/>
+        <mapping class="service.FieldEngineer"/>
+        <mapping class="service.RemainingFuel"/>
+        <mapping class="service.GenSet"/>
+        <mapping class="service.Bts"/>
+        <mapping class="service.SitesClass"/>
+        <mapping class="service.SitesCategory"/>
+        <mapping class="service.Region"/>
+        <mapping class="service.Bsc"/>
+        <mapping class="service.AddFuel"/>
+        <mapping class="service.ItemUsage"/>
+        <mapping class="service.ItemCategory"/>
+        <mapping class="service.ItemController"/>
+        <mapping class="service.System"/>
+        <mapping class="service.OpenTicket"/>
+        <mapping class="service.Ticket1"/>
+        <mapping class="service.Downtime"/>
+        <mapping class="service.ServiceRequest"/>
+    </session-factory>
+</hibernate-configuration>
+
+
